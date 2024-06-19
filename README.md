@@ -2,13 +2,15 @@
 
 Descrição breve do projeto
 
-### 1. Clonar o Repositório
+### Clonar o Repositório
 
 Primeiro, clone o repositório do projeto para sua máquina local:
 
 ```bash
 git clone https://github.com/rmo02/BACK_ESCURIDAO.git
 cd seu-projeto
+npm install
+
 
 ## Configuração de Variáveis de Ambiente
 
@@ -26,6 +28,5 @@ DB_PORT=
 DB_DIALECT=
 DB_TIMEZONE=
 
-
-
-
+## Executar o projeto
+npm start
