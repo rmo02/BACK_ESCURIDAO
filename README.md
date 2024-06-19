@@ -2,16 +2,6 @@
 
 Descrição breve do projeto
 
-### Clonar o Repositório
-
-Primeiro, clone o repositório do projeto para sua máquina local:
-
-```bash
-git clone https://github.com/rmo02/BACK_ESCURIDAO.git
-cd seu-projeto
-npm install
-
-
 ## Configuração de Variáveis de Ambiente
 
 Para configurar o ambiente de desenvolvimento local ou qualquer outro ambiente, crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
@@ -27,6 +17,16 @@ DB_HOST=
 DB_PORT=
 DB_DIALECT=
 DB_TIMEZONE=
+
+### Clonar o Repositório
+
+Primeiro, clone o repositório do projeto para sua máquina local:
+
+```bash
+git clone https://github.com/rmo02/BACK_ESCURIDAO.git
+cd seu-projeto
+npm install
+
 
 ## Executar o projeto
 npm start
