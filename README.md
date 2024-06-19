@@ -1,3 +1,5 @@
+## INSTRUÇÕES
+
 ## Configuração de Variáveis de Ambiente
 
 Para configurar o ambiente de desenvolvimento local ou qualquer outro ambiente, crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
