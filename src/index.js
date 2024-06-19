@@ -23,7 +23,7 @@ app.use('/api', routes);
 
 
 sequelize
-  .sync({ force: true }) // Use { force: false } para evitar a recriação das tabelas
+  .sync({ force: false }) // Use { force: false } para evitar a recriação das tabelas
   .then(() => {
     console.log("Tabelas sincronizadas com sucesso.");
   })

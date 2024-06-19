@@ -33,8 +33,6 @@ exports.createFiles = async (req, res) => {
 exports.getAllFiles = async (req, res) => {
   try {
       const files = await File.findAll();
-
-      // Ajustando os caminhos dos arquivos para usar barras normais e adicionar o IP
       const updatedFiles = files.map(file => ({
           id: file.id,
           arquivo: `${req.protocol}://${req.get('host')}/${file.arquivo.replace(/\\/g, '/')}` // Substitui as barras invertidas por barras normais
@@ -50,7 +48,6 @@ exports.getFileById = async (req, res) => {
   try {
       const file = await File.findByPk(req.params.id);
       if (file) {
-          // Ajustando o caminho do arquivo para usar barras normais e adicionar o IP
           const updatedFile = {
               id: file.id,
               arquivo: `${req.protocol}://${req.get('host')}/${file.arquivo.replace(/\\/g, '/')}` // Substitui as barras invertidas por barras normais

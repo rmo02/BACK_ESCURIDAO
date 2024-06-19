@@ -15,7 +15,7 @@ router.delete('/markers/:id', markerController.deleteMarker);
 
 // File routes
 router.post('/files', upload, fileController.createFiles);
-router.get('/files', fileController.getAllFiles);
+// router.get('/files', fileController.getAllFiles);
 router.get('/files/:id', fileController.getFileById);
 router.put('/files/:id', fileController.updateFile);
 router.delete('/files/:id', fileController.deleteFile);
