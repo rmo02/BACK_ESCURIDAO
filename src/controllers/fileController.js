@@ -24,7 +24,7 @@ exports.createFiles = async (req, res) => {
           files.push(createdFile);
       }
 
-      res.status(201).json({ message: 'Arquivos criados com sucesso', files });
+      res.status(201).json({ message: 'Arquivos criados com sucesso' });
   } catch (error) {
       res.status(400).json({ error: error.message });
   }
